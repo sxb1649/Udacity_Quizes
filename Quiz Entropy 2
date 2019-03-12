@@ -1,0 +1,6 @@
+What is the entropy for a bucket with a ratio of four red balls to ten blue balls? 
+Input your answer to at least three decimal places.
+
+Answer 0.863
+
+Formula : -((4/14) log2(4/14) + (10/14) log2(10/14))
