@@ -4,3 +4,12 @@ Input your answer to at least three decimal places.
 Answer 0.863
 
 Formula : -((4/14) log2(4/14) + (10/14) log2(10/14))
+
+
+
+
+If we have a bucket with eight red balls, three blue balls, and two yellow balls, 
+what is the entropy of the set of balls? Input your answer to at least three decimal places.
+
+1.334
+-(8/13)log2(8/13)-(3/13)log2(3/13)-(2/13)log2(2/13)
