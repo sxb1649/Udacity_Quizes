@@ -13,3 +13,7 @@ what is the entropy of the set of balls? Input your answer to at least three dec
 
 1.334
 -(8/13)log2(8/13)-(3/13)log2(3/13)-(2/13)log2(2/13)
+
+import numpy as np
+-(((8/13) * np.log2(8/13) + (2/13) * np.log2(2/13)) + (3/13) * np.log2(3/13))
+1.3346791410515946
