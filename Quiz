@@ -1,0 +1,23 @@
+Let's test your intuition. Which sizes of features are associated with underfitting and which with overfitting? Drag the answers to the corresponding boxes.
+
+Submit to check your answer choices!
+FEATURE
+
+UNDERFITTING/OVERFITTING
+
+Small maximum depth  UNDERFITTING
+
+
+Large maximum depth OVERFITTING
+
+
+Small minimum samples per split OVERFITTING
+
+Large minimum samples per split  UNDERFITTING
+
+
+Large depth very often causes overfitting, since a tree that is too deep, 
+can memorize the data. Small depth can result in a very simple model, which may cause underfitting.
+Small minimum samples per split may result in a complicated, highly branched tree, 
+which can mean the model has memorized the data, or in other words, overfit. Large minimum
+samples may result in the tree not having enough flexibility to get built, and may result in underfitting.
