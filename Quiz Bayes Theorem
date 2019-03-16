@@ -1,0 +1,20 @@
+Suppose you have a bag with three standard 6-sided dice with face values [1,2,3,4,5,6] and two non-standard 6-sided 
+dice with face values [2,3,3,4,4,5]. Someone draws a die from the bag, rolls it, and announces it was a 3. What is the 
+probability that the die that was rolled was a standard die?
+
+Input your answer as a fraction or as a decimal with at least three digits of precision.
+
+
+you should think of this problem in terms of the diagrams they showed us in the examples.
+
+Step 1) you know there is a total of 5 die (3 Standard and 2 NonStandard) so you have P(S)=3/5 and P(NS) = 2/5.
+
+Step 2) Ask yourself what are the chances of getting 3 with one of the standard die and do the same with the nonstandard (hint: there are two 3's in NS)... you get P(3|S) = 1/6 and P(3|NS) = 2/6
+
+Step 3) think the Naive Bayesian way... P(S|3) = P(3|S) x P(S) = 3/5 x 1/6 = 3/30 (but you are not done).
+
+Step 4) Get P(NS|3) = P(3|NS) x P(NS) = 4/30 you'll see why in step 5)
+
+Sept 5) Normalize it so that P(S|3) + P(NS|3) = 1 this means divide the "unnormalized" by P(S|3) + P(NS|3)... so P(S|3) = P(3|S) x P(S)/P(S|3) + P(NS|3) =(3/5 x 1/6) / (3/30+4/30) = 3/7
+
+so P(S|3) (the probability that the die is a standard die given that it rolled a three 3) is 3/7
