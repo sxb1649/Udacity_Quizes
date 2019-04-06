@@ -1,0 +1,15 @@
+Calculate the weight of the first model, with 2 significant digits.
+correct = 7
+incorrect= 1
+ln(correct/incorrect)
+1.95
+
+Weight quiz 2
+Calculate the weight of the second model.
+
+0.69
+
+Weight quiz 3
+Calculate the weight of the third model, with 2 significant digits.
+
+-1.099
