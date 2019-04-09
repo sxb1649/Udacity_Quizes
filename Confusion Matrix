@@ -1,0 +1,8 @@
+How many True Positives, True Negatives, False Positives, and False Negatives, are in the model above? 
+Please enter your answer in that order, as four numbers separated by a comma and a space. For example, 
+if your answers are 1, 2, 3, and 4, enter the string 1, 2, 3, 4.
+
+Remember, in the image above the blue points are considered positives and the red points are considered negatives.
+
+
+6,5,2,1
