@@ -1,0 +1,17 @@
+F1 Score Quiz
+For the following, remember that the formula for F1 Score is:
+
+\text{F1 Score} = 2 \cdot \frac{\text{Precision} * \text{Recall}}{\text{Precision} + \text{Recall}}F1 Score=2⋅ 
+Precision+Recall
+Precision∗Recall
+​	 
+
+Precision Quiz
+If the Precision of the medical model is 55.6%, and the Recall is 83.3%, what is the F1 Score? 
+(Please write your answer as a percentage, and round it to 1 decimal point.)
+
+(2(55.6*83.3)/(55.6+83.3))
+#Harmonic Mean
+
+
+66.68
