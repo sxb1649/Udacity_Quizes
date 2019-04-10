@@ -1,0 +1,94 @@
+
+Out of the following three models, which one should have an F-beta score of 2, 1, and 0.5? Match each model
+with its corresponding score.
+
+Detecting malfunctioning parts in a spaceship
+Sending phone notifications about videos a user may like
+Sending promotional material in the mail to potential clients
+
+Boundaries in the F-beta score
+Note that in the formula for F_\betaF 
+β
+​	  score, if we set \beta = 0,β=0, we get
+
+F_0 = (1+0^2) \cdot \frac{\text{Precision} \cdot \text{Recall}}{0 \cdot \text{Precision} + \text{Recall}} = \frac{\text{Precision} \cdot \text{Recall}}{\text{Recall}} = \text{Precision}.F 
+0
+​	 =(1+0 
+2
+ )⋅ 
+0⋅Precision+Recall
+Precision⋅Recall
+​	 = 
+Recall
+Precision⋅Recall
+​	 =Precision. Therefore, the minimum value of \betaβ is zero, and at this value, we get the precision.
+
+Now, notice that if N is really large, then
+
+F_\beta = (1+N^2) \cdot \frac{\text{Precision} \cdot \text{Recall}}{N^2 \cdot \text{Precision} + \text{Recall}} = \frac{\text{Precision} \cdot \text{Recall}}{\frac{N^2}{1+N^2}\text{Precision} + \frac{1}{1+N^2}\text{Recall}}.F 
+β
+​	 =(1+N 
+2
+ )⋅ 
+N 
+2
+ ⋅Precision+Recall
+Precision⋅Recall
+​	 = 
+1+N 
+2
+ 
+N 
+2
+ 
+​	 Precision+ 
+1+N 
+2
+ 
+1
+​	 Recall
+Precision⋅Recall
+​	 .
+
+As NN goes to infinity, we can see that \frac{1}{1+N^2} 
+1+N 
+2
+ 
+1
+​	  goes to zero, and \frac{N^2}{1+N^2} 
+1+N 
+2
+ 
+N 
+2
+ 
+​	  goes to 1.
+
+Therefore, if we take the limit, we have
+
+{\lim_{N\rightarrow \infty}} F_N = \frac{\text{Precision} \cdot \text{Recall}}{1 \cdot \text{Precision} + 0 \cdot \text{Recall}} = \text{Recall}.lim 
+N→∞
+​	 F 
+N
+​	 = 
+1⋅Precision+0⋅Recall
+Precision⋅Recall
+​	 =Recall.
+
+Thus, to conclude, the boundaries of beta are between 0 and \infty.∞.
+
+If \beta = 0,β=0, then we get precision.
+If \beta = \infty,β=∞, then we get recall.
+For other values of \beta,β, if they are close to 0, we get something close to precision, if they are large numbers, then we get something close to recall, and if \beta = 1,β=1, then we get the harmonic mean of precision and recall.
+
+
+
+#Answers
+
+For the spaceship model, we can't really afford any malfunctioning parts, and it's ok if we overcheck some of the parts
+that are working well. Therefore, this is a high recall model, so we associate it with beta = 2.
+For the notifications model, since it's free to send them, we won't get harmed too much if we send them to more people
+than we need to. But we also shouldn't overdo it, since it will annoy the users. We also would like to find as many 
+interested users as we can. Thus, this is a model which should have a decent precision and a decent recall. Beta = 1 should work here.
+For the Promotional Material model, since it costs us to send the material, we really don't want to send it to many 
+people that won't be interested. Thus, this is a high precision model. Thus, beta = 0.5 will work here.
