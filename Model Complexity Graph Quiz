@@ -1,0 +1,6 @@
+
+In the model above, how many training and testing errors are there? 
+Please enter your answer as a string composed of the two numbers, separated by a comma and a space. For example, 
+if you find 1 training error and 4 testing errors, your answer should be 1, 4.
+
+0,2
